@@ -1,0 +1,43 @@
+/*footer*/
+
+
+#contact {
+    background-color: black;
+    padding: 100px 0;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+
+        .contact-info {
+            flex: 1;
+
+            h5 {
+                color: #e1a87a;
+            }
+        }
+
+
+        .contact-logo {
+            text-align: center;
+
+            img {
+                height: 20px;
+            }
+        }
+
+        .contact-social {
+            background-color: #000;
+            text-align: right;
+
+
+            img {
+                color: white;
+                height: 30px;
+                margin: 5px;
+            }
+        }
+    }
+}
