@@ -16,14 +16,6 @@ body {
     border: #000000 1px solid;
 }
 
-.row-wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1em;
-    grid-auto-rows: minmax(170px, auto);
-    padding: 60px 0;
-}
-
 h1 {
     font-size: 42px;
 }
@@ -115,6 +107,8 @@ a:hover {
 
 .display-3 {
     font-size: 4.5rem;
+    text-align: center;
+    justify-content: center;
 }
 
 .display-4 {
@@ -484,7 +478,7 @@ a:hover {
 .h-auto {
     height: auto;
 }
-
+//button
 .btn {
     display: inline-block;
     font-size: 13px;
@@ -560,4 +554,48 @@ a:hover {
 .btn-outline:hover {
     background: #ffd95e;
     color: #fff;
-}
+}// Button
+%btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 13px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    &:hover {
+      transform: scale(.98);
+    }
+  }
+  
+  .btn-light {
+    @extend %btn;
+    background: $main-color;
+    color: #fff;
+    &:hover {
+      background: lighten($main-color, 10%);
+    }
+  }
+  
+  .btn-dark {
+    @extend %btn;
+    background: $gray1-color;
+    color: #fff;
+    &:hover {
+      background: lighten($gray1-color, 10%);
+    }
+  }
+  
+  .btn-outline {
+    @extend %btn;
+    background: #fff;
+    color: $main-color;
+    font-weight: bold;
+    border: 2px solid $main-color;
+    &:hover {
+      background: lighten($main-color, 10%);
+      color: #fff;
+    }
+  }
+  

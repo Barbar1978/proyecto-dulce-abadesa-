@@ -1,79 +1,25 @@
-/* Utility Classes */
 /*media queries */
+/*ms*/
 @media only screen and (max-width: 600px) {
 
-    .row-wrapper {
-        /* display: grid; */
-        grid-template-columns: repeat(2, 1fr);
-        padding: 40px 0;
-    }
-
-    .row-wrapper {
-        /* display: grid; */
-        grid-template-columns: repeat(1, 1fr);
-        padding: 40px 0;
-    }
-
-    .display-1 {
-        font-size: 10px;
-    }
-
-    /* Header */
-    .mainheader {
-
-        font-size: 30px;
-        text-align: center;
-        width: 100vw;
-        align-items: center;
-        justify-content: center;
-
-        /* Showcase */
-        .showcase {
-            padding-top: 80px;
-            padding-bottom: 100px;
-
-
-            .container {
-                display: flex;
-                height: 100%;
-                flex-flow: row wrap;
-                margin: 0 auto;
-                padding: 0 10px;
-                flex-direction: column;
-                align-content: center;
-                justify-content: center;
-                align-items: center;
-
-
-                h2 {
-                    font-size: 30px;
-                    margin: 15px;
-                }
-
-                p {
-                    margin: 10px;
-                    font-size: 20px;
-                }
-
-            }
-        }
-
-    }
-
-    /* Navbar */
-
+    /*navbar*/
     #navbar {
         height: 400px;
 
+        .container-navbar {
+            .logo {
+                float: none;
+                margin-bottom: 20px;
+            }
 
+            h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 25px;
+            }
 
-
-        .container-navbar h1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 25px;
         }
 
         .nav {
@@ -82,10 +28,61 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+
+
+            li {
+                float: none;
+
+                a {
+                    padding: 10px;
+                }
+            }
         }
     }
 
+    //header
+    .mainheader {
+        font-size: 30px;
+        width: 100vw;
 
+        .showcase-content {
+            height: 100%;
+
+            .showcase-content-box {
+                padding: 30px;
+
+                &-box {
+                    width: 100%;
+                    padding: 20px;
+
+                    p {
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Galleri-index
+
+    .main-productos {
+        width: 100%;
+        height: 100%;
+
+        #gallery {
+            flex-direction: column;
+
+            .gallery-wrap {
+
+                img {
+                    flex-direction: column;
+                    height: 250px;
+                    width: 100%;
+                    margin: 0px;
+                }
+            }
+        }
+    }
 
     /* Work */
     .work-row {
@@ -99,7 +96,9 @@
 
 
         .about-slim {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 
@@ -121,7 +120,10 @@
         margin: 2px;
     }
 
-    /*porfolio*/
+    /*porfolio pasteleria*/
+    .display-3{
+        font-size: 30px;
+    }
     .portfolio-wrap {
         flex-direction: column;
     }
@@ -136,24 +138,44 @@
         height: 100%;
     }
 
-  
-}
-@media only screen and (max-width: 768px) {
-    #portfolio {
-      .portfolio-wrap {
-        flex-direction: column;
-        &-box {
-          width: 100%;
-          margin-bottom: 15px;
-          img {
-            // height: 300px;
-            width: 100%;
-            height: auto;
-          }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Libre Baskerville', sans-serif;
+
+        margin-bottom:5px {
+            font-size: 30px;
+
         }
-      }
-    } 
-  } 
 
-@media only screen and (max-width:992px) {}
+    }
+}
 
+/*m*/
+
+@media only screen and (min-width: 768px) {
+    #portfolio {
+        .portfolio-wrap {
+            flex-direction: column;
+
+            &-box {
+                width: 100%;
+                margin-bottom: 15px;
+
+                img {
+                    // height: 300px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {}
+
+/* xl */
+@media only screen and (min-width: 950px) {}
