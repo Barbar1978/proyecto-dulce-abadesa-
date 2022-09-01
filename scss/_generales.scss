@@ -12,27 +12,20 @@ body {
     line-height: 1.5;
 }
 
-.border-black {
-    border: #000000 1px solid;
-}
-
 h1 {
-    font-size: 42px;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 38px;
-    text-align: center;
-    justify-content: center;
-}
-
-
-h4 {
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
 }
 
 h5 {
@@ -49,41 +42,28 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Libre Baskerville', sans-serif;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style: none;
+    font-family: $font-title;
+    margin-bottom: .5rem;
+    font-weight: 300;
+    line-height: 1.2;
 }
 
 p {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    margin: 10px 0;
-    line-height: 1.7em;
-    font-weight: 200;
-}
-
-a {
-    text-decoration: none;
-}
-
-hr {
-    border: 1px solid #1c1c1c;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 a,
-:visited {
+a:visited {
     text-decoration: none;
     color: #000;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
+// Utility Classes
 .large {
     font-size: 1.25rem;
 }
@@ -93,22 +73,15 @@ a:hover {
 }
 
 .display-1 {
-    font-size: 60px;
-    text-align: center;
-    justify-content: center;
+    font-size: 6rem;
 }
 
 .display-2 {
     font-size: 5.5rem;
-    text-align: center;
-    justify-content: center;
 }
-
 
 .display-3 {
     font-size: 4.5rem;
-    text-align: center;
-    justify-content: center;
 }
 
 .display-4 {
@@ -163,35 +136,6 @@ a:hover {
     text-align: right;
 }
 
-
-.text-lowercase {
-    text-transform: lowercase;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-.text-capitalize {
-    text-transform: capitalize;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
 .container {
     margin: auto;
     max-width: 1300px;
@@ -204,11 +148,11 @@ a:hover {
 }
 
 .m-1 {
-    margin: 0.25rem;
+    margin: .25rem;
 }
 
 .m-2 {
-    margin: 0.5rem;
+    margin: .5rem;
 }
 
 .m-3 {
@@ -228,11 +172,11 @@ a:hover {
 }
 
 .mt-1 {
-    margin-top: 0.25rem;
+    margin-top: .25rem;
 }
 
 .mt-2 {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
 }
 
 .mt-3 {
@@ -252,11 +196,11 @@ a:hover {
 }
 
 .mr-1 {
-    margin-right: 0.25rem;
+    margin-right: .25rem;
 }
 
 .mr-2 {
-    margin-right: 0.5rem;
+    margin-right: .5rem;
 }
 
 .mr-3 {
@@ -276,11 +220,11 @@ a:hover {
 }
 
 .mb-1 {
-    margin-bottom: 0.25rem;
+    margin-bottom: .25rem;
 }
 
 .mb-2 {
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 .mb-3 {
@@ -300,11 +244,11 @@ a:hover {
 }
 
 .ml-1 {
-    margin-left: 0.25rem;
+    margin-left: .25rem;
 }
 
 .ml-2 {
-    margin-left: 0.5rem;
+    margin-left: .5rem;
 }
 
 .ml-3 {
@@ -324,11 +268,11 @@ a:hover {
 }
 
 .p-1 {
-    padding: 0.25rem;
+    padding: .25rem;
 }
 
 .p-2 {
-    padding: 0.5rem;
+    padding: .5rem;
 }
 
 .p-3 {
@@ -348,11 +292,11 @@ a:hover {
 }
 
 .pt-1 {
-    padding-top: 0.25rem;
+    padding-top: .25rem;
 }
 
 .pt-2 {
-    padding-top: 0.5rem;
+    padding-top: .5rem;
 }
 
 .pt-3 {
@@ -372,11 +316,11 @@ a:hover {
 }
 
 .pr-1 {
-    padding-right: 0.25rem;
+    padding-right: .25rem;
 }
 
 .pr-2 {
-    padding-right: 0.5rem;
+    padding-right: .5rem;
 }
 
 .pr-3 {
@@ -396,11 +340,11 @@ a:hover {
 }
 
 .pb-1 {
-    padding-bottom: 0.25rem;
+    padding-bottom: .25rem;
 }
 
 .pb-2 {
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
 }
 
 .pb-3 {
@@ -420,11 +364,11 @@ a:hover {
 }
 
 .pl-1 {
-    padding-left: 0.25rem;
+    padding-left: .25rem;
 }
 
 .pl-2 {
-    padding-left: 0.5rem;
+    padding-left: .5rem;
 }
 
 .pl-3 {
@@ -478,83 +422,8 @@ a:hover {
 .h-auto {
     height: auto;
 }
-//button
-.btn {
-    display: inline-block;
-    font-size: 13px;
-    padding: 20px 45px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
 
-.btn-outline {
-    border: 2px solid black;
-    color: white;
-}
-
-.btn-outline:hover {
-    background: #e1a87a;
-    border: 2px solid #e1a87a;
-    color: #fff;
-}
-
-.btn-link {
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.btn-outline,
-.btn-dark,
-.btn-light {
-    display: inline-block;
-    font-size: 15px;
-    padding: 13px 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 4px;
-}
-
-.btn-outline:hover,
-.btn-dark:hover,
-.btn-light:hover {
-    transform: scale(0.98);
-}
-
-.btn-light {
-    background: #ffcd2b;
-    color: #fff;
-}
-
-.btn-light:hover {
-    background: #ffd95e;
-}
-
-.btn-dark {
-    background: #4d4d4d;
-    color: #fff;
-}
-
-.btn-dark:hover {
-    background: #676767;
-}
-
-.btn-outline {
-    background: #fff;
-    color: #ffcd2b;
-    font-weight: bold;
-    border: 2px solid #ffcd2b;
-}
-
-.btn-outline:hover {
-    background: #ffd95e;
-    color: #fff;
-}// Button
+// Button
 %btn {
     display: inline-block;
     font-size: 15px;
@@ -564,38 +433,66 @@ a:hover {
     font-weight: bold;
     letter-spacing: 1px;
     border-radius: 4px;
+
     &:hover {
-      transform: scale(.98);
+        transform: scale(.98);
     }
-  }
-  
-  .btn-light {
+}
+
+.btn-light {
     @extend %btn;
     background: $main-color;
     color: #fff;
+
     &:hover {
-      background: lighten($main-color, 10%);
+        background: lighten($main-color, 10%);
     }
-  }
-  
-  .btn-dark {
+}
+
+.btn-dark {
     @extend %btn;
-    background: $gray1-color;
+    background: #000;
     color: #fff;
+
     &:hover {
-      background: lighten($gray1-color, 10%);
+        background: lighten(#000, 10%);
     }
-  }
-  
-  .btn-outline {
+}
+
+.btn-outline {
     @extend %btn;
     background: #fff;
-    color: $main-color;
+    color: #000;
     font-weight: bold;
-    border: 2px solid $main-color;
+    border: 2px solid #000;
+
     &:hover {
-      background: lighten($main-color, 10%);
-      color: #fff;
+        background: lighten(#000, 10%);
+        color: #fff;
     }
-  }
-  
+}
+
+// Forms
+form {
+    label {
+        display: inline-block;
+        margin-bottom: 1rem;
+        margin-top: .5rem
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .7rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: #fff;
+       /* background-clip: padding-box;*/
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+}

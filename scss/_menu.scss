@@ -1,48 +1,9 @@
-#navbar {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-    .navbar .logo img {
-        height: 60px;
-
-
-        a {
-            color: $myColor;
-            font-size: 15px;
-            font-weight: 40px;
-            text-transform: uppercase;
-        }
-    }
-
-    .nav {
-        display: flex;
-       
-
-        li {
-            margin-left: 40px;
-            list-style: none;
-            float: left;
-
-
-            a {
-                display: block;
-                padding: 20px;
-                text-align: center;
 
 
 
-                a:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
 
-/* Header */
+
+/* Header *
 .mainheader {
     background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.479)), url(../img/baner-2.jpeg);
     background-repeat: no-repeat;
@@ -89,4 +50,4 @@
             }
         }
     }
-}
+}//*/

@@ -2,7 +2,7 @@
 /*ms*/
 @media only screen and (max-width: 600px) {
 
-    /*navbar*/
+    /*navbar*
     #navbar {
         height: 400px;
 
@@ -61,6 +61,41 @@
                 }
             }
         }
+    }*/
+    // Header
+    #top {
+        height: 100%;
+    }
+
+    // Navbar
+    #navbar {
+        text-align: center;
+
+        .logo {
+            float: none;
+        }
+
+        //End .logo
+        ul {
+            float: none;
+
+            li {
+                float: none;
+
+                a {
+                    padding: 5px;
+                }
+            }
+        }
+
+        //End ul
+    }
+
+    //End #navbar
+
+    // Showcase
+    #showcase {
+        padding: 20px;
     }
 
     // Galleri-index
@@ -121,9 +156,10 @@
     }
 
     /*porfolio pasteleria*/
-    .display-3{
+    .display-3 {
         font-size: 30px;
     }
+
     .portfolio-wrap {
         flex-direction: column;
     }
@@ -138,20 +174,6 @@
         height: 100%;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'Libre Baskerville', sans-serif;
-
-        margin-bottom:5px {
-            font-size: 30px;
-
-        }
-
-    }
 }
 
 /*m*/
