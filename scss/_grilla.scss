@@ -1,205 +1,349 @@
 /*main index*/
-.main-productos {
-    width: 100%;
-    height: 100%;
+// destacados
+#featured {
+    text-align: center;
 
-    .productos>div {
+    .featured-wrap {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 20px;
-        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
 
-
-        h3 {
-            display: flex;
-            align-items: center;
-            background-color: #aa5b1a;
-            color: white;
-            text-align: center;
-            font-weight: 200px;
-            font-size: 25px;
-            line-height: 25px;
-            border: 1px solid #6e5138;
-            padding: 30px;
-            justify-content: center;
+        &-box {
+            position: relative;
+            width: 300px;
         }
 
-        div {
-            border: 1px solid gray;
-            width: 300px;
-            height: 400px;
-            text-align: center;
-            background-color: #663b18;
-            color: white;
-            margin: 20px;
-            padding: 10px;
-            box-shadow: 9px -11px 20px -11px rgba (0, 0, 0, 0.75);
+        &-box:hover .overlay {
+            opacity: 1;
+        }
 
-            img {
-                width: 100%;
-                height: 300px;
-            }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 300px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #f2f7fa;
+            text-align: center;
+            padding: 100px 50px;
 
             a {
-                text-decoration: none;
-                background-color: white;
-                font-weight: 900;
-                padding: 5px;
-                align-items: center;
-
-            }
-
-            h4 {
-                margin-bottom: 10px;
-
-            }
-
-        }
-    }
-
-    // Galleria-index 
-
-    #gallery {
-        display: flex;
-        text-align: center;
-
-        .gallery-wrap {
-            display: flex;
-            overflow: hidden;
-
-            img {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                height: 160px;
-                margin: 5px;
+                color: #fff;
             }
         }
-    }
 
-}
-
-/* nosotros */
-.work {
-    padding: 80px 0;
-
-
-    h2 {
-        text-align: center;
-    }
-
-    .work-row {
-        display: flex;
-
-
-        .work-row-box {
-            border: 2px solid #1c1c1c;
+        &-box-1 {
+            background: url('../img/gallery-1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
             margin: 10px;
-            padding: 30px;
+        }
 
-            img {
-                width: 100%;
-            }
+        &-box-2 {
+            background: url('../img/baner-2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
 
-            p {
-                padding-bottom: 17px;
-            }
+        &-box-3 {
+            background: url('../img/gallery-3.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-4 {
+            background: url('../img/gallery-4.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-5 {
+            background: url('../img/gallery-5.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-6 {
+            background: url('../img/gallery-6.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-7 {
+            background: url('../img/gallery-7.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-8 {
+            background: url('../img/gallery-8.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
         }
     }
+
+    //End.featured-wrap
 }
+
+//End #featured
+
+// Galeria
+
+// Gallery
+#gallery {
+    text-align: center;
+
+    .gallery-wrap {
+        display: flex;
+        justify-content: center;
+
+        &-box {
+            position: relative;
+            width: 300px;
+        }
+
+        &-box:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay {
+            position: absol
+            ute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 300px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #f2f7fa;
+            text-align: center;
+            padding: 100px 50px;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        &-box-1 {
+            background: url('../img/featured-1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-2 {
+            background: url('../img/gallery-02.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-3 {
+            background: url('../img/gallery-03.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-4 {
+            background: url('../img/gallery-04.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-5 {
+            background: url('../img/gallery-05.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-6 {
+            background: url('../img/gallery-06.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-7 {
+            background: url('../img/gallery-07.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+
+        &-box-8 {
+            background: url('../img/gallery-08.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            margin: 10px;
+        }
+    }
+
+    //End .gallery-wrap
+}
+
+//End #gallery
+
+// About
 #about {
-    padding: 80px 0;
-    display: flex;
-    justify-content: center;
+    background: #000;
+    color: #fff;
 
-    img {
-        width: 100%;
-        align-items: center;
-    }
+    .about-wrap {
+        display: flex;
 
+        &-img {
+            img {
+                height: 600px;
+            }
+        }
 
-    .about-text {
-        padding: 60px 50px;
-
-
-        p {
-
-            padding-bottom: 30px;
+        &-content {
+            padding: 80px;
         }
     }
-}
 
-/*pasteleria*/
-.mainpasteleria {
-    h3 {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        padding: 20px;
-        font-weight: lighter;
-        font-size: 50px;
-    }
-
-    p {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        width: 65%;
-        margin: 0 auto;
-        font-weight: lighter;
-    }
-
-    .portfolio {
-        background: #e1a87a;
+    //End .about-wrap
 
 
-        .portfolio-wrap {
+    /* nosotros */
+    .work {
+        padding: 80px 0;
+
+
+        h2 {
+            text-align: center;
+        }
+
+        .work-row {
             display: flex;
-            justify-content: space-between;
 
 
-            .portfolio-wrap-box {
+            .work-row-box {
+                border: 2px solid #1c1c1c;
+                margin: 10px;
+                padding: 30px;
+
                 img {
-                    height: 300px;
+                    width: 100%;
                 }
 
                 p {
-                    background: #ededed;
-                    padding: 20px;
+                    padding-bottom: 17px;
                 }
             }
         }
     }
-}
 
-/*galeria*/
-.galeria {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding: 5px;
-    margin: 5px;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-auto-rows: 300px;
-    gap: 10px;
-    justify-content: stretch;
-    justify-items: center;
-    align-items: baseline;
-
-    .grid-container {
-
+    #about {
+        padding: 80px 0;
+        display: flex;
+        justify-content: center;
 
         img {
             width: 100%;
-            height: 100%;
-            padding: 20px;
-            grid-template-columns: repeat(3, 1fr);
-            object-fit: cover;
-            grid-auto-rows: 250px;
-            gap: 10px;
+            align-items: center;
+        }
 
+
+        .about-text {
+            padding: 60px 50px;
+
+
+            p {
+
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    /*pasteleria*/
+    .mainpasteleria {
+        h3 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            font-weight: lighter;
+            font-size: 50px;
+        }
+
+        p {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            width: 65%;
+            margin: 0 auto;
+            font-weight: lighter;
+        }
+
+        .portfolio {
+            background: #e1a87a;
+
+
+            .portfolio-wrap {
+                display: flex;
+                justify-content: space-between;
+
+
+                .portfolio-wrap-box {
+                    img {
+                        height: 300px;
+                    }
+
+                    p {
+                        background: #ededed;
+                        padding: 20px;
+                    }
+                }
+            }
         }
     }
 }

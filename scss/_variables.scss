@@ -2,27 +2,27 @@ $font-title: 'Roboto', sans-serif;
 $font-body: 'Roboto', sans-serif;
 
 // Colors
-$myColor: #815e44;
-$main-color: #ffc038;
-$secondary-color: #1b252d;
+$myColor: white;
+$main-color: #fcf7ed;
+$secondary-color: black;
 $gray1-color: #4d4d4d;
 $gray2-color: #707070;
 $gray3-color: #9b9b9a;
 
 h1 {
 
-    $myColor: #815e44;
+    $myColor: white;
     color: $myColor;
 }
 
 p {
-    color: $myColor;
+    color: $main-color;
+
 }
 
 a {
     color: $myColor;
+    $myFont: Helvetica,
+    sans-serif;
+    $myFontSize: 10px;
 }
-
-$myFont: Helvetica, sans-serif;
-$myFontSize: 10px;
-$myWidth: 680px;

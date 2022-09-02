@@ -1,182 +1,96 @@
 /*media queries */
 /*ms*/
-@media only screen and (max-width: 600px) {
+// destacados
+@media(max-width:375px){
+#showcase {
+    height: 100vh; 
+}
+}
 
-    /*navbar*
-    #navbar {
-        height: 400px;
-
-        .container-navbar {
-            .logo {
-                float: none;
-                margin-bottom: 20px;
-            }
-
-            h1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                font-size: 25px;
-            }
-
-        }
-
-        .nav {
-
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-
-            li {
-                float: none;
-
-                a {
-                    padding: 10px;
-                }
-            }
-        }
-    }
-
-    //header
-    .mainheader {
-        font-size: 30px;
-        width: 100vw;
-
-        .showcase-content {
-            height: 100%;
-
-            .showcase-content-box {
-                padding: 30px;
-
-                &-box {
-                    width: 100%;
-                    padding: 20px;
-
-                    p {
-                        padding-bottom: 10px;
-                    }
-                }
-            }
-        }
-    }*/
-    // Header
-    #top {
-        height: 100%;
-    }
-
-    // Navbar
-    #navbar {
-        text-align: center;
-
-        .logo {
-            float: none;
-        }
-
-        //End .logo
-        ul {
-            float: none;
-
-            li {
-                float: none;
-
-                a {
-                    padding: 5px;
-                }
-            }
-        }
-
-        //End ul
-    }
-
-    //End #navbar
-
-    // Showcase
-    #showcase {
-        padding: 20px;
-    }
-
-    // Galleri-index
-
-    .main-productos {
-        width: 100%;
-        height: 100%;
-
-        #gallery {
-            flex-direction: column;
-
-            .gallery-wrap {
-
-                img {
-                    flex-direction: column;
-                    height: 250px;
-                    width: 100%;
-                    margin: 0px;
-                }
-            }
-        }
-    }
-
-    /* Work */
-    .work-row {
+#gallery {
+    .gallery-wrap {
         flex-direction: column;
 
-    }
+        &-box {
+            width: 100%;
+        }
 
-    /* About */
-    #about {
-        flex-direction: column;
+        .overlay {
+            width: 100%;
+        }
 
-
-        .about-slim {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        &-box-1,
+        &-box-2,
+        &-box-3,
+        &-box-4,
+        &-box-5,
+        &-box-6,
+        &-box-7,
+        &-box-8 {
+            margin: 0;
+            margin-bottom: 10px;
         }
     }
 
-    /* footer */
-    #contact {
-        padding: 80px 0;
-    }
+    //End .featured-wrap
+}
 
-    #contact-info p {
-        font-size: 14px;
-    }
+//End #featured
 
-    #contact-logo img {
-        height: 60px;
-    }
-
-    #contact-social img {
-        height: 20px;
-        margin: 2px;
-    }
-
-    /*porfolio pasteleria*/
-    .display-3 {
-        font-size: 30px;
-    }
-
-    .portfolio-wrap {
-        flex-direction: column;
-    }
-
-    .portfolio-wrap-box {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .portfolio-wrap-box img {
-        width: 100%;
-        height: 100%;
-    }
+/* Work */
+.work-row {
+    flex-direction: column;
 
 }
 
-/*m*/
+/* About */
+#about {
+    flex-direction: column;
+
+
+    .about-slim {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* footer */
+#contact {
+    padding: 80px 0;
+}
+
+#contact-info p {
+    font-size: 14px;
+}
+
+#contact-logo img {
+    height: 60px;
+}
+
+#contact-social img {
+    height: 20px;
+    margin: 2px;
+}
+
+/*porfolio pasteleria*/
+.display-3 {
+    font-size: 30px;
+}
+
+.portfolio-wrap {
+    flex-direction: column;
+}
+
+.portfolio-wrap-box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.portfolio-wrap-box img {
+    width: 100%;
+    height: 100%;
+}
 
 @media only screen and (min-width: 768px) {
     #portfolio {
@@ -197,6 +111,102 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+
+    // Header
+    .mainheader {
+        text-align: center;
+
+        h1 {
+            float: none;
+        }
+
+        ul {
+            float: none;
+
+            li {
+                display: block;
+                padding: 10px;
+            }
+        }
+    }
+
+    //Home
+    #home {
+        .home-wrapper {
+            // display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 3em;
+
+            &-content {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            //End &-content
+            &-img-1,
+            &-img-2,
+            &-img-3 {
+                height: 200px;
+            }
+
+            //End .&-img-1
+        }
+
+        //End .home-wrapper
+    }
+
+    //End #home
+
+    //About
+    #about {
+        .home-wrapper {
+            grid-template-columns: 1fr;
+
+            &-content {
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            //End &-content
+            &-about {
+                padding: 20px;
+            }
+        }
+
+        //End .home-wrapper
+    }
+
+    //End #home
+
+    //Contact
+    #contact {
+        .home-wrapper {
+            grid-template-columns: 1fr;
+
+            &-content {
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            //End &-content
+            &-contact {
+                padding: 30px;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        //End .home-wrapper
+    }
+
+    //End #contact
+
+}
+
+//End @media
 @media only screen and (max-width: 768px) {}
 
 /* xl */
