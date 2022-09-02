@@ -1,28 +1,61 @@
-//nav-header
-// Header
-.mainheader {
-    h1 {
-        float: left;
-        font-size: 1.9rem;
-        color:$myColor;
+//nav
+
+nav {
+    background: $gray1-color;
+    height: 80px;
+    width: 100%;
+
+
+    .enlace {
+        position: absolute;
+        padding: 20px 50px;
     }
 
-    ul {
+    .logo {
+        height: 40px;
+    }
+
+    nav ul {
         float: right;
-        padding-top: 10px;
+        margin-right: 20px;
+
 
         li {
             display: inline-block;
-            padding-right: 20px;
-        }
+            line-height: 80px;
+            margin: 0 5px;
 
-        a:hover {
-            text-decoration: underline;
+
+            a {
+                color: #fff;
+                font-size: 18px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+
+            }
+
+            a.active,
+            a:hover {
+                background: #323236;
+                transition: .5s;
+            }
+
         }
     }
 
-    .current {
-        text-decoration: underline;
+    .checkbtn {
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
     }
 }
 
@@ -30,7 +63,7 @@
 #showcase {
     background: url('../img/baner-2.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -38,10 +71,10 @@
     padding: 290px 90px;
     align-items: center;
     justify-content: center;
-    
+
 
     h2 {
         padding-top: 30px;
-    } 
-      
+    }
+
 }

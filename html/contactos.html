@@ -19,13 +19,11 @@
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="container">
-                <div class="logo"><img src="" alt="">
-                    <h1>DULCE ABADESA</h1>
-                </div>
-                <ul class="nav">
+    <header class="mainheader pt-5 pb-5">
+        <div class="container pb-4">
+            <h1><a href="index.html" class="logo">DULCE ABADESA</a></h1>
+            <nav>
+                <ul>
                     <li>
                         <a href="../index.html">HOME</a>
                     </li>
@@ -42,8 +40,7 @@
                         <a href="./contactos.html">CONTACTO</a>
                     </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
     </header>
     <main>
         <section id="register">
@@ -59,7 +56,7 @@
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="email" class="text-white">Email</label>
+                                <label for="email" class="text-white">mail</label>
                                 <input class="form-control" type="email" placeholder="."></imput>
                             </div>
                         </div>
@@ -79,7 +76,6 @@
                         </div>
                     </div>
                     <button type="button" class="btn btn-lg">crear cuenta</button>
-                    <p class="small mt-3">Already have an account? <a href="signin.html">Sign In</a></p>
                 </form>
             </div>
         </section>
@@ -105,14 +101,14 @@
                                 <h5>informacion</h5>
                             </legend>
                             <h6>pedido</h6>
-                            <input type="radio" name="informacion" id="" placeholder="Your last name">
+                            <input type="radio" name="informacion"  placeholder="Your last name">
                             <h6>producto</h6>
-                            <input type="radio" name="informacion" id="" placeholder="Your last name">
+                            <input type="radio" name="informacion"  placeholder="Your last name">
                         </fieldset>
                         <fieldset>
-                            <label for="cars" >extras</label>
+                            <label for="cars">extras</label>
                             <div class="form-group">
-                                <select id="cars" name="cars" >
+                                <select id="cars" name="cars">
                                     <option value=""></option>
                                     <option value="">promociones</option>
                                     <option value="">combos</option>
@@ -126,7 +122,6 @@
                         </fieldset>
                     </div>
                     <button type="button" class="btn btn-lg">enviar</button>
-                    <p class="small mt-3">Don't have an account? <a href="subscribe.html">Subscribe</a></p>
                 </form>
             </div>
         </section>
