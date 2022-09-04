@@ -1,78 +1,19 @@
 /*media queries */
-/*ms*/
-/* MEDIAS QUERIES */
-
-
-
 /* MOBILE */
-@media (max-width: 768px) {
-    body {
-        padding-top: 70px;
-    }
-
-    .header {
-        height: 60px;
-    }
-
-    .logo {
-        font-size: 25px;
-        padding: 0 20px;
-        line-height: 60px;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        background-color: #2c3e50;
-        position: fixed;
-        top: 60px;
-        width: 100%;
-        padding: 20px 0;
-
-        height: calc(100% - 60px);
-        overflow-y: auto;
-
-        left: 100%;
-        transition: left 0.3s;
 
 
-        .nav-menu-item {
-            line-height: 70px;
-        }
-
-        .nav-menu-link:hover,
-        .nav-menu-link_active {
-            background: none;
-            color: #83c5f7;
-        }
-
-        .nav-toggle {
-            display: block;
-        }
-
-        .nav-menu_visible {
-            left: 0;
-        }
-
-        .nav-toggle:focus:not(:focus-visible) {
-            outline: none;
-        }
-    }
-
-
-    .banner .row h2 {
-        font-size: 3rem;
-    }
-
-    .banner .btnServices {
-        margin-top: 3rem;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 1.3rem;
-    }
-
+.banner .row h2 {
+    font-size: 3rem;
 }
+
+.banner .btnServices {
+    margin-top: 3rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+
 
 /* footer */
 #contact {
@@ -130,9 +71,74 @@
     }
 }
 
+@media all and (max-width: 700px) {
 
-//End @media
-@media only screen and (max-width: 768px) {}
+    /* Oculta el nav en la parte izquiera*/
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: red;
+        transform: translateX(-100vw);
+        transition: 0.5s;
 
-/* xl */
-@media only screen and (min-width: 950px) {}
+        /* Muestra el nav*/
+        &--show {
+            transform: translateX(0);
+
+            &__button {
+                text-align: right;
+                margin: 1rem;
+
+                &__ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+
+                    &__link {
+                        display: block;
+                        padding: 1rem;
+                        font-size: 1.5rem;
+                        text-align: center;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Estilos Escritorio*/
+@media all and (min-width: 992px) {
+
+    /* Oculta botón de abrir o cerrar*/
+    .nav__button,
+    .header__button-nav--open {
+        display: none;
+    }
+
+    /* Adapta el nav en horizontal*/
+    .nav {
+        &__ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+
+            &__link {
+                display: block;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                color: black;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
