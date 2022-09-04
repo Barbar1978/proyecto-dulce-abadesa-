@@ -21,6 +21,33 @@
   h5,
   h6 {
     font-size: 1.5rem; }
+  #featured .featured-wrap {
+    flex-direction: column; }
+    #featured .featured-wrap-box {
+      width: 100%; }
+    #featured .featured-wrap .overlay {
+      width: 100%; }
+    #featured .featured-wrap-box-1, #featured .featured-wrap-box-2, #featured .featured-wrap-box-3, #featured .featured-wrap-box-4, #featured .featured-wrap-box-5, #featured .featured-wrap-box-6, #featured .featured-wrap-box-7,
+    #featured .featured-wrap-box-8 #featured .featured-wrap-box-7, #featured .featured-wrap-box-8 {
+      margin: 0;
+      margin-bottom: 10px; }
+  #products {
+    flex-direction: column;
+    text-align: center; }
+    #products .box-1,
+    #products .box-2,
+    #products .box-3,
+    #products .box-4,
+    #products .box-5,
+    #products .box-6,
+    #products .box-7,
+    #products .box-8,
+    #products .box-9,
+    #products .box-10 .box-11,
+    #products .box-12 {
+      width: 90%; }
+  #product .product-wrap {
+    flex-direction: column; }
   /* footer */
   #contact {
     padding: 80px 0; }
@@ -32,8 +59,10 @@
     height: 20px;
     margin: 2px; }
   /*porfolio pasteleria*/
-  .display-3 {
-    font-size: 30px; }
+  h3 .display-3 {
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.5rem; }
   .portfolio-wrap {
     flex-direction: column; }
   .portfolio-wrap-box {
@@ -72,6 +101,23 @@
       text-decoration: none;
       color: black; } }
 
+#products {
+  flex-wrap: wrap; }
+  #products .box-1,
+  #products .box-2,
+  #products .box-3,
+  #products .box-4,
+  #products .box-5,
+  #products .box-6,
+  #products .box-7,
+  #products .box-8,
+  #products .box-9,
+  #products .box-10 {
+    width: 90%; }
+  #products #product .product-wrap {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
 /* Estilos Escritorio*/
 @media all and (min-width: 701px) {
   /* Oculta botón de abrir o cerrar*/
@@ -108,7 +154,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  /*   position: fixed;*/
   align-items: center;
   top: 0;
   left: 0;
@@ -138,7 +184,8 @@ h2 {
   text-align: center; }
 
 h3 {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  font-size: 3rem; }
 
 h4 {
   font-size: 1.5rem; }
@@ -186,7 +233,7 @@ a:visited {
   font-size: 5.5rem; }
 
 .display-3 {
-  font-size: 4.5rem; }
+  font-size: 3.5rem; }
 
 .display-4 {
   font-size: 3.5rem; }
@@ -230,7 +277,7 @@ a:visited {
 
 .container {
   margin: auto;
-  max-width: 1300px;
+  max-width: 1600px;
   overflow: auto;
   padding: 0 20px; }
 
@@ -659,145 +706,165 @@ form .form-control {
       height: 400px;
       margin: 10px; }
 
-#gallery {
-  text-align: center; }
-  #gallery .gallery-wrap {
-    display: flex;
-    justify-content: center; }
-    #gallery .gallery-wrap-box {
-      position: relative;
-      width: 300px; }
-    #gallery .gallery-wrap-box:hover .overlay {
-      opacity: 1; }
-    #gallery .gallery-wrap .overlay {
+#products {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #products .box {
+    position: relative;
+    width: 100%;
+    margin: 20px; }
+    #products .box .overlay {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
       height: 100%;
-      width: 300px;
+      width: 100%;
       opacity: 0;
       transition: .5s ease;
-      background-color: #f2f7fa;
-      text-align: center;
-      padding: 100px 50px; }
-      #gallery .gallery-wrap .overlay a {
-        color: #fff; }
-    #gallery .gallery-wrap-box-1 {
-      background: url("../img/gallery-1.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #gallery .gallery-wrap-box-2 {
-      background: url("../img/gallery-02.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #gallery .gallery-wrap-box-3 {
-      background: url("../img/gallery-03.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #gallery .gallery-wrap-box-4 {
-      background: url("../img/gallery-04.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #gallery .gallery-wrap-box-5 {
-      background: url("../img/gallery-05.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #gallery .gallery-wrap-box-6 {
-      background: url("../img/gallery-06.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #gallery .gallery-wrap-box-7 {
-      background: url("../img/gallery-07.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #gallery .gallery-wrap-box-8 {
-      background: url("../img/gallery-08.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
+      background-color: #fff; }
+      #products .box .overlay .text {
+        color: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center; }
+        #products .box .overlay .text a {
+          padding: 7px 10px; }
+  #products .box:hover .overlay {
+    opacity: 0; }
+  #products .box-1 {
+    background: url("../img/gallery-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-2 {
+    background: url("../img/gallery-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-3 {
+    background: url("../img/gallery-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-4 {
+    background: url("../img/gallery-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-5 {
+    background: url("../img/gallery-5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-6 {
+    background: url("../img/gallery-6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-7 {
+    background: url("../img/gallery-7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-8 {
+    background: url("../img/gallery-8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-9 {
+    background: url("../img/gallery-8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-10 {
+    background: url("../img/gallery-8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-11 {
+    background: url("../img/gallery-8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+  #products .box-12 {
+    background: url("../img/gallery-8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 212px;
+    height: 280px; }
+
+/* nosotros */
+.work {
+  padding: 80px 0; }
+  .work h2 {
+    text-align: center; }
+  .work .work-row {
+    display: flex; }
+    .work .work-row .work-row-box {
+      border: 2px solid #1c1c1c;
+      margin: 10px;
+      padding: 30px; }
+      .work .work-row .work-row-box img {
+        width: 100%; }
+      .work .work-row .work-row-box p {
+        padding-bottom: 17px; }
 
 #about {
-  background: #000;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center; }
+  #about img {
+    width: 100%;
+    align-items: center; }
+  #about .about-text {
+    padding: 60px 50px; }
+    #about .about-text p {
+      padding-bottom: 30px; }
+
+/*pasteleria*/
+.main-pasteleria {
+  background: #a39170;
   color: #fff;
-  /* nosotros */
-  /*pasteleria*/ }
-  #about .about-wrap {
-    display: flex; }
-    #about .about-wrap-img img {
-      height: 600px; }
-    #about .about-wrap-content {
-      padding: 80px; }
-  #about .work {
-    padding: 80px 0; }
-    #about .work h2 {
-      text-align: center; }
-    #about .work .work-row {
-      display: flex; }
-      #about .work .work-row .work-row-box {
-        border: 2px solid #1c1c1c;
-        margin: 10px;
-        padding: 30px; }
-        #about .work .work-row .work-row-box img {
-          width: 100%; }
-        #about .work .work-row .work-row-box p {
-          padding-bottom: 17px; }
-  #about #about {
-    padding: 80px 0;
-    display: flex;
-    justify-content: center; }
-    #about #about img {
-      width: 100%;
-      align-items: center; }
-    #about #about .about-text {
-      padding: 60px 50px; }
-      #about #about .about-text p {
-        padding-bottom: 30px; }
-  #about .mainpasteleria h3 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    font-weight: lighter;
-    font-size: 50px; }
-  #about .mainpasteleria p {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 65%;
-    margin: 0 auto;
-    font-weight: lighter; }
-  #about .mainpasteleria .portfolio {
-    background: #e1a87a; }
-    #about .mainpasteleria .portfolio .portfolio-wrap {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  text-align: center; }
+  .main-pasteleria .portfolio {
+    background: #d8a378; }
+    .main-pasteleria .portfolio .portfolio-wrap {
       display: flex;
       justify-content: space-between; }
-      #about .mainpasteleria .portfolio .portfolio-wrap .portfolio-wrap-box img {
+      .main-pasteleria .portfolio .portfolio-wrap-box img {
         height: 300px; }
-      #about .mainpasteleria .portfolio .portfolio-wrap .portfolio-wrap-box p {
+      .main-pasteleria .portfolio .portfolio-wrap-box p {
         background: #ededed;
         padding: 20px; }

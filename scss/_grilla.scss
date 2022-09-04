@@ -204,21 +204,17 @@
 //End #featured
 
 // Galeria
-#gallery {
-    text-align: center;
 
-    .gallery-wrap {
-        display: flex;
-        justify-content: center;
+// Products
+#products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        &-box {
-            position: relative;
-            width: 300px;
-        }
-
-        &-box:hover .overlay {
-            opacity: 1;
-        }
+    .box {
+        position: relative;
+        width: 100%;
+        margin: 20px;
 
         .overlay {
             position: absolute;
@@ -227,209 +223,225 @@
             left: 0;
             right: 0;
             height: 100%;
-            width: 300px;
+            width: 100%;
             opacity: 0;
             transition: .5s ease;
-            background-color: #f2f7fa;
-            text-align: center;
-            padding: 100px 50px;
+            background-color: #fff;
 
-            a {
-                color: #fff;
+            .text {
+                color: #000;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+
+                a {
+                    padding: 7px 10px;
+                }
             }
         }
 
-        &-box-1 {
-            background: url('../img/gallery-1.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            margin: 10px;
-        }
-
-        &-box-2 {
-            background: url('../img/gallery-02.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            margin: 10px;
-        }
-
-        &-box-3 {
-            background: url('../img/gallery-03.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            margin: 10px;
-        }
-
-        &-box-4 {
-            background: url('../img/gallery-04.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            margin: 10px;
-        }
-
-        &-box-5 {
-            background: url('../img/gallery-05.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            margin: 10px;
-        }
-
-        &-box-6 {
-            background: url('../img/gallery-06.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            margin: 10px;
-        }
-
-        &-box-7 {
-            background: url('../img/gallery-07.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            margin: 10px;
-        }
-
-        &-box-8 {
-            background: url('../img/gallery-08.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 400px;
-            margin: 10px;
-        }
+        //End .overlay
     }
 
-    //End .gallery-wrap
+    //End .box
+    .box:hover .overlay {
+        opacity: 0;
+    }
+
+    .box-1 {
+        background: url('../img/gallery-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-2 {
+        background: url('../img/gallery-2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-3 {
+        background: url('../img/gallery-3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-4 {
+        background: url('../img/gallery-4.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-5 {
+        background: url('../img/gallery-5.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-6 {
+        background: url('../img/gallery-6.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-7 {
+        background: url('../img/gallery-7.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-8 {
+        background: url('../img/gallery-8.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-9 {
+        background: url('../img/gallery-8.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-10 {
+        background: url('../img/gallery-8.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+    .box-11 {
+        background: url('../img/gallery-8.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-12 {
+        background: url('../img/gallery-8.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
 }
 
-//End #gallery
+//End #products
 
-// About
-#about {
-    background: #000;
-    color: #fff;
+/* nosotros */
+.work {
+    padding: 80px 0;
 
-    .about-wrap {
-        display: flex;
 
-        &-img {
-            img {
-                height: 600px;
-            }
-        }
-
-        &-content {
-            padding: 80px;
-        }
+    h2 {
+        text-align: center;
     }
 
-    //End .about-wrap
+    .work-row {
+        display: flex;
 
 
-    /* nosotros */
-    .work {
-        padding: 80px 0;
+        .work-row-box {
+            border: 2px solid #1c1c1c;
+            margin: 10px;
+            padding: 30px;
 
+            img {
+                width: 100%;
+            }
 
-        h2 {
-            text-align: center;
+            p {
+                padding-bottom: 17px;
+            }
         }
+    }
+}
 
-        .work-row {
+#about {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .about-text {
+        padding: 60px 50px;
+
+
+        p {
+
+            padding-bottom: 30px;
+        }
+    }
+}
+
+/*pasteleria*/
+.main-pasteleria {
+    background: $gray3-color;
+    color: #fff;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+
+    //End #mai
+
+    .portfolio {
+        background: $gray1-color;
+
+        .portfolio-wrap {
             display: flex;
+            justify-content: space-between;
 
-
-            .work-row-box {
-                border: 2px solid #1c1c1c;
-                margin: 10px;
-                padding: 30px;
-
+            &-box {
                 img {
-                    width: 100%;
+                    height: 300px;
                 }
 
                 p {
-                    padding-bottom: 17px;
-                }
-            }
-        }
-    }
-
-    #about {
-        padding: 80px 0;
-        display: flex;
-        justify-content: center;
-
-        img {
-            width: 100%;
-            align-items: center;
-        }
-
-
-        .about-text {
-            padding: 60px 50px;
-
-
-            p {
-
-                padding-bottom: 30px;
-            }
-        }
-    }
-
-    /*pasteleria*/
-    .mainpasteleria {
-        h3 {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            padding: 20px;
-            font-weight: lighter;
-            font-size: 50px;
-        }
-
-        p {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            width: 65%;
-            margin: 0 auto;
-            font-weight: lighter;
-        }
-
-        .portfolio {
-            background: #e1a87a;
-
-
-            .portfolio-wrap {
-                display: flex;
-                justify-content: space-between;
-
-
-                .portfolio-wrap-box {
-                    img {
-                        height: 300px;
-                    }
-
-                    p {
-                        background: #ededed;
-                        padding: 20px;
-                    }
+                    background: #ededed;
+                    padding: 20px;
                 }
             }
         }
     }
 }
+
+//End #portfolio*/
