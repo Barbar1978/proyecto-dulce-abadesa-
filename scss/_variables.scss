@@ -6,26 +6,12 @@ $myColor: white;
 $main-color: #fcf7ed;
 $secondary-color: black;
 $gray1-color:#d8a378;
-$gray2-color: rgb(182, 135, 135);
+$gray2-color: rgb(255, 240, 240);
 $gray3-color: #9b9b9a;
+$myFontSize: 10px;
+$myFont: Helvetica,
+sans-serif;
 
-h1 {
-
-    $myColor: rgb(235, 227, 227);
-    color: $myColor;
-}
-
-p {
-    color: $main-color;
-
-}
-
-a {
-    color: $myColor;
-    $myFont: Helvetica,
-    sans-serif;
-    $myFontSize: 10px;
-}
 :root {
   --negro: #393939;
   --tipo-principal: Helvetica, Arial, sans-serif;

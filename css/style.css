@@ -2,15 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-h1 {
-  color: #ebe3e3; }
-
-p {
-  color: #fcf7ed; }
-
-a {
-  color: white; }
-
 :root {
   --negro: #393939;
   --tipo-principal: Helvetica, Arial, sans-serif;
@@ -18,53 +9,28 @@ a {
 
 /*media queries */
 /* MOBILE */
-.banner .row h2 {
-  font-size: 3rem; }
-
-.banner .btnServices {
-  margin-top: 3rem;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1.3rem; }
-
-/* footer */
-#contact {
-  padding: 80px 0; }
-
-#contact-info p {
-  font-size: 14px; }
-
-#contact-logo img {
-  height: 60px; }
-
-#contact-social img {
-  height: 20px;
-  margin: 2px; }
-
-/*porfolio pasteleria*/
-.display-3 {
-  font-size: 30px; }
-
-.portfolio-wrap {
-  flex-direction: column; }
-
-.portfolio-wrap-box {
-  width: 100%;
-  margin-bottom: 15px; }
-
-.portfolio-wrap-box img {
-  width: 100%;
-  height: 100%; }
-
-@media only screen and (min-width: 768px) {
-  #portfolio .portfolio-wrap {
+@media all and (max-width: 600px) {
+  /* footer */
+  #contact {
+    padding: 80px 0; }
+  #contact-info p {
+    font-size: 14px; }
+  #contact-logo img {
+    height: 60px; }
+  #contact-social img {
+    height: 20px;
+    margin: 2px; }
+  /*porfolio pasteleria*/
+  .display-3 {
+    font-size: 30px; }
+  .portfolio-wrap {
     flex-direction: column; }
-    #portfolio .portfolio-wrap-box {
-      width: 100%;
-      margin-bottom: 15px; }
-      #portfolio .portfolio-wrap-box img {
-        width: 100%;
-        height: auto; } }
+  .portfolio-wrap-box {
+    width: 100%;
+    margin-bottom: 15px; }
+  .portfolio-wrap-box img {
+    width: 100%;
+    height: 100%; } }
 
 @media all and (max-width: 700px) {
   /* Oculta el nav en la parte izquiera*/
@@ -74,7 +40,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: red;
+    background: #d8a378;
     transform: translateX(-100vw);
     transition: 0.5s;
     /* Muestra el nav*/ }
@@ -93,10 +59,30 @@ a {
             font-size: 1.5rem;
             text-align: center;
             text-decoration: none;
-            color: black; } }
+            color: black; }
+  .banner .row h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 1.5rem; }
+    .banner .row h2 .btn-dark {
+      background: #000;
+      color: #fff;
+      font-size: 10px; }
+  .btn-light,
+  .btn-dark,
+  .btn-outline {
+    font-size: 10px; }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem; }
+  /* Estilos Escritorio*/ }
 
-/* Estilos Escritorio*/
-@media all and (min-width: 992px) {
+@media all and (max-width: 700px) and (min-width: 700px) {
   /* Oculta botón de abrir o cerrar*/
   .nav__button,
   .header__button-nav--open {
@@ -113,18 +99,26 @@ a {
       color: black;
       transition: 0.5s; }
       .nav__ul__link:hover {
-        opacity: 0.5; } }
+        opacity: 0.5; }
+  #portfolio .portfolio-wrap {
+    flex-direction: column; }
+    #portfolio .portfolio-wrap-box {
+      width: 100%;
+      margin-bottom: 15px; }
+      #portfolio .portfolio-wrap-box img {
+        width: 100%;
+        height: auto; } }
 
 .header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
   align-items: center;
   top: 0;
   left: 0;
   right: 0;
   background: black;
-  padding: 1rem;
-  margin: 1rem; }
+  padding: 1rem; }
 
 * {
   padding: 0;
@@ -140,10 +134,12 @@ body {
   color: #d8a378; }
 
 h1 {
-  font-size: 2.5rem; }
+  background-color: white;
+  font-size: 3rem; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 3rem;
+  text-align: center; }
 
 h3 {
   font-size: 1.75rem; }
@@ -165,20 +161,21 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
   margin-bottom: .5rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2; }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.5; }
 
 a,
 a:visited {
   text-decoration: none;
-  color: #fcf7ed; }
+  color: #fcf7ed;
+  padding: 0.5rem 1rem; }
 
 .large {
   font-size: 1.25rem; }
@@ -451,7 +448,7 @@ a:visited {
 .h-auto {
   height: auto; }
 
-.btn-light, .btn-dark, .btn-outline {
+.btn-light, .btn-dark, .btn-outline, .banner .btn-dark {
   display: inline-block;
   font-size: 15px;
   padding: 13px 25px;
@@ -536,50 +533,38 @@ form .form-control {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-
-.banner .row h2 {
-  text-align: center;
-  font-size: 4rem;
-  color: white;
-  margin: 0 1.5rem; }
-
-.banner .btnServices {
-  margin-top: 3rem;
-  background-color: #3ea7f2;
-  color: #fff;
-  padding: 15px 25px;
-  border-radius: 5px;
-  font-size: 1.5rem; }
-
-.change {
-  display: inline-block;
-  vertical-align: bottom;
-  animation: blinker 2s linear infinite;
-  animation-delay: -1s; }
-
-.change span {
-  color: #2e2e2e;
-  float: left;
-  overflow: hidden;
-  animation: hideShow 12s linear infinite; }
-
-.change span:nth-child(1) {
-  animation-delay: -0s; }
-
-.change span:nth-child(2) {
-  animation-delay: -2s; }
-
-.change span:nth-child(3) {
-  animation-delay: -4s; }
-
-.change span:nth-child(4) {
-  animation-delay: -6s; }
-
-.change span:nth-child(5) {
-  animation-delay: -8s; }
-
-.change span:nth-child(6) {
-  animation-delay: -10s; }
+  .banner .banner .row h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin: 0 1.5rem; }
+  .banner .btn-dark {
+    background: #000;
+    color: #fff; }
+    .banner .btn-dark:hover {
+      background: #1a1a1a; }
+  .banner .change {
+    display: inline-block;
+    vertical-align: bottom;
+    animation: blinker 2s linear infinite;
+    animation-delay: -1s; }
+  .banner .change span {
+    color: #2e2e2e;
+    float: left;
+    overflow: hidden;
+    animation: hideShow 12s linear infinite; }
+  .banner .change span:nth-child(1) {
+    animation-delay: -0s; }
+  .banner .change span:nth-child(2) {
+    animation-delay: -2s; }
+  .banner .change span:nth-child(3) {
+    animation-delay: -4s; }
+  .banner .change span:nth-child(4) {
+    animation-delay: -6s; }
+  .banner .change span:nth-child(5) {
+    animation-delay: -8s; }
+  .banner .change span:nth-child(6) {
+    animation-delay: -10s; }
 
 @keyframes blinker {
   50% {
