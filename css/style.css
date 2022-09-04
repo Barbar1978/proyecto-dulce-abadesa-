@@ -21,43 +21,6 @@
   h5,
   h6 {
     font-size: 1.5rem; }
-  #featured .featured-wrap {
-    flex-direction: column; }
-    #featured .featured-wrap-box {
-      width: 100%; }
-    #featured .featured-wrap .overlay {
-      width: 100%; }
-    #featured .featured-wrap-box-1, #featured .featured-wrap-box-2, #featured .featured-wrap-box-3, #featured .featured-wrap-box-4, #featured .featured-wrap-box-5, #featured .featured-wrap-box-6, #featured .featured-wrap-box-7,
-    #featured .featured-wrap-box-8 #featured .featured-wrap-box-7, #featured .featured-wrap-box-8 {
-      margin: 0;
-      margin-bottom: 10px; }
-  #products {
-    flex-direction: column;
-    text-align: center; }
-    #products .box-1,
-    #products .box-2,
-    #products .box-3,
-    #products .box-4,
-    #products .box-5,
-    #products .box-6,
-    #products .box-7,
-    #products .box-8,
-    #products .box-9,
-    #products .box-10 .box-11,
-    #products .box-12 {
-      width: 90%; }
-  #product .product-wrap {
-    flex-direction: column; }
-  /* footer */
-  #contact {
-    padding: 80px 0; }
-  #contact-info p {
-    font-size: 14px; }
-  #contact-logo img {
-    height: 60px; }
-  #contact-social img {
-    height: 20px;
-    margin: 2px; }
   /*porfolio pasteleria*/
   h3 .display-3 {
     font-weight: 300;
@@ -70,7 +33,17 @@
     margin-bottom: 15px; }
   .portfolio-wrap-box img {
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+  /* footer */
+  #contact {
+    padding: 80px 0; }
+  #contact-info p {
+    font-size: 14px; }
+  #contact-logo img {
+    height: 60px; }
+  #contact-social img {
+    height: 20px;
+    margin: 2px; } }
 
 @media all and (max-width: 700px) {
   /* Oculta el nav en la parte izquiera*/
@@ -100,23 +73,6 @@
       text-align: center;
       text-decoration: none;
       color: black; } }
-
-#products {
-  flex-wrap: wrap; }
-  #products .box-1,
-  #products .box-2,
-  #products .box-3,
-  #products .box-4,
-  #products .box-5,
-  #products .box-6,
-  #products .box-7,
-  #products .box-8,
-  #products .box-9,
-  #products .box-10 {
-    width: 90%; }
-  #products #product .product-wrap {
-    flex-wrap: wrap;
-    justify-content: space-between; }
 
 /* Estilos Escritorio*/
 @media all and (min-width: 701px) {
@@ -622,234 +578,6 @@ form .form-control {
   16.66%,
   33.3% {
     width: auto; } }
-
-#featured {
-  text-align: center; }
-  #featured .featured-wrap {
-    display: flex;
-    justify-content: center;
-    flex-direction: row; }
-    #featured .featured-wrap-box {
-      position: relative;
-      width: 300px; }
-    #featured .featured-wrap-box:hover .overlay {
-      opacity: 1; }
-    #featured .featured-wrap .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 300px;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: #f2f7fa;
-      text-align: center;
-      padding: 100px 50px; }
-      #featured .featured-wrap .overlay a {
-        color: #fff; }
-    #featured .featured-wrap-box-1 {
-      background: url("../img/gallery-1.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #featured .featured-wrap-box-2 {
-      background: url("../img/baner-2.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #featured .featured-wrap-box-3 {
-      background: url("../img/gallery-3.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #featured .featured-wrap-box-4 {
-      background: url("../img/gallery-4.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #featured .featured-wrap-box-5 {
-      background: url("../img/gallery-5.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #featured .featured-wrap-box-6 {
-      background: url("../img/gallery-6.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #featured .featured-wrap-box-7 {
-      background: url("../img/gallery-7.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-    #featured .featured-wrap-box-8 {
-      background: url("../img/gallery-8.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      margin: 10px; }
-
-#products {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  #products .box {
-    position: relative;
-    width: 100%;
-    margin: 20px; }
-    #products .box .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: #fff; }
-      #products .box .overlay .text {
-        color: #000;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center; }
-        #products .box .overlay .text a {
-          padding: 7px 10px; }
-  #products .box:hover .overlay {
-    opacity: 0; }
-  #products .box-1 {
-    background: url("../img/gallery-1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-2 {
-    background: url("../img/gallery-2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-3 {
-    background: url("../img/gallery-3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-4 {
-    background: url("../img/gallery-4.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-5 {
-    background: url("../img/gallery-5.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-6 {
-    background: url("../img/gallery-6.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-7 {
-    background: url("../img/gallery-7.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-8 {
-    background: url("../img/gallery-8.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-9 {
-    background: url("../img/gallery-8.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-10 {
-    background: url("../img/gallery-8.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-11 {
-    background: url("../img/gallery-8.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-  #products .box-12 {
-    background: url("../img/gallery-8.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 212px;
-    height: 280px; }
-
-/* nosotros */
-.work {
-  padding: 80px 0; }
-  .work h2 {
-    text-align: center; }
-  .work .work-row {
-    display: flex; }
-    .work .work-row .work-row-box {
-      border: 2px solid #1c1c1c;
-      margin: 10px;
-      padding: 30px; }
-      .work .work-row .work-row-box img {
-        width: 100%; }
-      .work .work-row .work-row-box p {
-        padding-bottom: 17px; }
-
-#about {
-  padding: 80px 0;
-  display: flex;
-  justify-content: center; }
-  #about img {
-    width: 100%;
-    align-items: center; }
-  #about .about-text {
-    padding: 60px 50px; }
-    #about .about-text p {
-      padding-bottom: 30px; }
 
 /*pasteleria*/
 .main-pasteleria {

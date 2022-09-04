@@ -19,86 +19,10 @@
         font-size: 1.5rem;
     }
 
-    // Gallery
-    #featured {
-        .featured-wrap {
-            flex-direction: column;
-
-            &-box {
-                width: 100%;
-            }
-
-            .overlay {
-                width: 100%;
-            }
-
-            &-box-1,
-            &-box-2,
-            &-box-3,
-            &-box-4,
-            &-box-5,
-            &-box-6,
-            &-box-7,
-            &-box-8
-            &-box-7,
-            &-box-8
-            {
-                margin: 0;
-                margin-bottom: 10px;
-            }
-        }
-
-    }
-
-    // Galeria
-    // Products
-    #products {
-        flex-direction: column;
-        text-align: center;
-
-        .box-1,
-        .box-2,
-        .box-3,
-        .box-4,
-        .box-5,
-        .box-6,
-        .box-7,
-        .box-8,
-        .box-9,
-        .box-10
-        .box-11,
-        .box-12  {
-            width: 90%;
-        }
-    }
-
-    //End #products
-
-    // Product
-    #product {
-        .product-wrap {
-            flex-direction: column;
-        }
-    }
 
 
-    /* footer */
-    #contact {
-        padding: 80px 0;
-    }
 
-    #contact-info p {
-        font-size: 14px;
-    }
 
-    #contact-logo img {
-        height: 60px;
-    }
-
-    #contact-social img {
-        height: 20px;
-        margin: 2px;
-    }
 
     /*porfolio pasteleria*/
     h3 .display-3 {
@@ -122,6 +46,23 @@
     }
 
 
+    /* footer */
+    #contact {
+        padding: 80px 0;
+    }
+
+    #contact-info p {
+        font-size: 14px;
+    }
+
+    #contact-logo img {
+        height: 60px;
+    }
+
+    #contact-social img {
+        height: 20px;
+        margin: 2px;
+    }
 }
 
 @media all and (max-width: 700px) {
@@ -165,33 +106,7 @@
     }
 }
 
-#products {
-   flex-wrap: wrap;
 
-    .box-1,
-    .box-2,
-    .box-3,
-    .box-4,
-    .box-5,
-    .box-6,
-    .box-7,
-    .box-8,
-    .box-9,
-    .box-10 {
-        width: 90%;
-    }
-
-
-    //End #products
-
-    // Product
-    #product {
-        .product-wrap {
-           flex-wrap: wrap;
-           justify-content: space-between;
-        }
-    }
-}
 
 /* Estilos Escritorio*/
 @media all and (min-width: 701px) {
