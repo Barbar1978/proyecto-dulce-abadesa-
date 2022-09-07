@@ -1,95 +1,188 @@
 /*main index*/
-.banner {
-    background: linear-gradient(to right, rgba(0, 0, 144, 0.2), rgba(128, 133, 133, 0.7)), url(../img/baner-2.jpg) no-repeat;
+// Showcase
+#showcase {
+    background: url('../img/baner-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-
-    .banner .row h2 {
-        text-align: center;
-        font-size: 3rem;
-        color: white;
-        margin: 0 1.5rem;
-    }
-
-
-    .btn-dark {
-        @extend %btn;
-        background: #000;
+    height: 85vh;
+    .showcase-content {
+      text-align: center;
+      padding: 150px;
+      &-box {
+        background: rgba(255, 255, 255, 0.5);
+        width: 70%;
+        margin: 0 auto;
+        padding: 80px 120px;
         color: #fff;
-
-        &:hover {
-            background: lighten(#000, 10%);
+        a {
+          padding: 13px 45px;
         }
-    }
+      }
+    } //End .showcase-content
+  } //End #showcase
+  
 
-    .change {
-        display: inline-block;
-        vertical-align: bottom;
-        animation: blinker 2s linear infinite;
-        animation-delay: -1s;
-    }
+// recomendados
+#destacados {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
-    .change span {
-        color: #2e2e2e;
-        float: left;
-        overflow: hidden;
-        animation: hideShow 12s linear infinite;
-    }
-
-    .change span:nth-child(1) {
-        animation-delay: -0s;
-    }
-
-    .change span:nth-child(2) {
-        animation-delay: -2s;
-    }
-
-    .change span:nth-child(3) {
-        animation-delay: -4s;
-    }
-
-    .change span:nth-child(4) {
-        animation-delay: -6s;
-    }
-
-    .change span:nth-child(5) {
-        animation-delay: -8s;
-    }
-
-    .change span:nth-child(6) {
-        animation-delay: -10s;
-    }
-
-    @keyframes blinker {
-        50% {
-            opacity: 0;
-        }
-    }
-
-    @keyframes hideShow {
-
-        0%,
-        16.6%,
-        33.33%,
-        100% {
-            width: 0;
-        }
-
-        16.66%,
-        33.3% {
-            width: auto;
-        }
+    div {
+        width: 10%;
+        margin: 0 auto;
     }
 }
 
+// Products
+#products {
+    display: flex;
 
-   
+    .box {
+        position: relative;
+        width: 100%;
+        margin: 20px;
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #fff;
+
+            .text {
+                color: #000;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+
+                a {
+                    padding: 7px 10px;
+                }
+            }
+        }
+
+        //End .overlay
+    }
+
+    //End .box
+    .box:hover .overlay {
+        opacity: 0.9;
+    }
+
+    .box-1 {
+        background: url('../img/modelo19.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-2 {
+        background: url('../img/modelo20.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-3 {
+        background: url('../img/modelo21.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-4 {
+        background: url('../img/modelo22.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-5 {
+        background: url('../img/modelo23.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-6 {
+        background: url('../img/modelo24.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-7 {
+        background: url('../img/modelo25.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-8 {
+        background: url('../img/modelo26.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-9 {
+        background: url('../img/modelo27.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+
+    .box-10 {
+        background: url('../img/modelo28.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 212px;
+        height: 280px;
+    }
+}
+
+//End #products
+
+// Product
+#product {
+    .product-wrap {
+      display: flex;
+      background: #fff;
+      padding: 90px 70px;
+    }
+  }
+
 
 /*pasteleria*/
 .main-pasteleria {
@@ -114,7 +207,7 @@
                 }
 
                 p {
-                    background: #ededed;
+                    background: #141313;
                     padding: 20px;
                 }
             }
@@ -123,3 +216,4 @@
 }
 
 //End #portfolio*/
+//contacto
