@@ -217,3 +217,94 @@
 
 //End #portfolio*/
 //contacto
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.479)), url(./img/baner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ 
+ }
+ 
+ .hero  h1 {
+    font-family: "PT Mono", monospace;
+    font-weight: 400px;
+    font-size: 50px;
+    line-height: 25px;
+    border: 1px solid rgb(217, 172, 189);
+    padding: 10px;
+ }
+ 
+ .hero p {
+    margin: 12px;
+    font-size: 30px;
+ }
+ 
+ .hero a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(81, 17, 76);
+    padding: 10px;
+ }
+ 
+ .productos h3 {
+    background-color: rgb(106, 16, 95);
+    color: white;
+    text-align: center;
+    font-weight: 300px;
+    font-size: 40px;
+    line-height: 25px;
+    border: 1px solid rgb(217, 172, 189);
+    padding: 30px;
+ }
+ 
+ 
+ .productos>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+ }
+ 
+ 
+ .productos div div img {
+    width: 100%;
+    height: 300px;
+ }
+ 
+ .productos div div {
+    border: 1px solid gray;
+    width: 300px;
+    height: 550px;
+    text-align: center;
+    background-color: rgb(123, 10, 102);
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 9px -11px 20px -11px rgba (0, 0, 0, 0.75);
+ 
+ }
+ 
+ .productos div div h4 {
+    margin-bottom: 10px;
+ }
+ 
+ .productos div div a {
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+    background-color: white;
+    font-weight: 900;
+    padding: 5px;
+ 
+ }
+ 

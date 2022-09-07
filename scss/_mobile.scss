@@ -1,23 +1,4 @@
 /*media queries */
-/* MOBILE */
-@media all and (max-width: 600px) {
-
-    //main-index
-
-    h1 .display-1 {
-        font-weight: 300;
-        line-height: 1.2;
-        font-size: 1.5rem;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-size: 1.5rem;
-    }
 
     /*porfolio pasteleria*/
     h3 .display-3 {
@@ -58,82 +39,8 @@
         height: 20px;
         margin: 2px;
     }
-}
-
-@media all and (max-width: 700px) {
-
-    /* Oculta el nav en la parte izquiera*/
-    .nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: $gray1-color;
-        transform: translateX(-100vw);
-        transition: 0.5s;
 
 
-        /* Muestra el nav*/
-        &--show {
-            transform: translateX(0);
-        }
-
-        &__button {
-            text-align: right;
-            margin: 1rem;
-        }
-
-        &__ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        &__link {
-            display: block;
-            padding: 1rem;
-            font-size: 1.5rem;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-        }
-    }
-}
-
-
-
-/* Estilos Escritorio*/
-@media all and (min-width: 701px) {
-
-    /* Oculta botón de abrir o cerrar*/
-
-    .nav__button,
-    .header__button-nav--open {
-        display: none;
-    }
-
-    /* Adapta el nav en horizontal*/
-    .nav {
-        &__ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-
-            &__link {
-                display: block;
-                padding: 0.5rem 1rem;
-                text-decoration: none;
-                color: black;
-                transition: 0.5s;
-
-                &:hover {
-                    opacity: 0.5;
-                }
-            }
-        }
-    }
-}
 
 @media only screen and (max-width: 768px) {
 
@@ -187,29 +94,67 @@
 
 }
 
-//End @media
-
-@media all and (min-width: 992) {
-
-    .nav__button,
-    .header__button-nav--open {
-        display: none;
+  
+@media (max-width:750px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > ul li a {
+      display: block;
+      width: 100%;
     }
 
-    #portfolio {
-        .portfolio-wrap {
-            flex-direction: column;
+    /*   */
 
-            &-box {
-                width: 100%;
-                margin-bottom: 15px;
+      .nav > .nav-links > ul li{
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: #333;
+         
+      }
+      .nav > .nav-links > ul li a{
+          margin-left: 40%;
+      }
+      .nav .nav-links ul a.icon{
+        margin-left: 33%;
+      }
 
-                img {
-                    // height: 300px;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        }
+    /*   */
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
     }
-}
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }

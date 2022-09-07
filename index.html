@@ -5,52 +5,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords"
-    content="Recetas dulces, Recetas saladas, Recetas fáciles, Recetas económicas, Recetas rápidas, Recetas italianas">
-  <meta name="description"
-    content="Gran variedad de buenas recetas dulces, saladas, italianas, fáciles, económicas y rápidas para todo momento y ocasión.">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta name="keywords"content="Recetas dulces, Recetas saladas, Recetas fáciles, Recetas económicas, Recetas rápidas, Recetas italianas">
+  <meta name="description"content="Gran variedad de buenas recetas dulces, saladas, italianas, fáciles, económicas y rápidas para todo momento y ocasión.">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
   <title>DULCE ABADESA,PASTELERIA ARTESANAL</title>
 </head>
-
 <body>
-  <header x-data="{ open: false }" class="header">
-    <div class="header__logo">
-      <p>DULCE ABADESA</P>
+<header>
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        D.A
+      </div>
     </div>
-    <button class="header__button-nav--open" x-on:click="open = true">Abrir</button>
-    <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
-      <div class="nav__button" x-on:click="open = false">
-        <button class="header__button-nav--close">Cerrar</button>
-      </div>
-      <ul class="nav__ul">
-        <li class="nav__item"><a href="./index.html" class="nav__link">HOME</a></li>
-        <li class="nav__item"><a href="./html/pasteleriaartesanal.html" class="nav__link">PASTELERIA ARTESANAL</a></li>
-        <li class="nav__item"><a href="./html/nosotros.html" class="nav__link">NOSOTROS</a></li>
-        <li class="nav__item"><a href="./html/galeria.html" class="nav__link">GALERIA</a></li>
-        <li class="nav__item"><a href="./html/contacto.html" class="nav__link">CONTACTO</a></li>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="./index.html" target="_blank">HOME</a></li>
+        <li><a href="./html/pasteleriaartesanal.html" target="_blank">PASTELERIA ARTESANAL</a></li>
+        <li><a href="./html/quienessomos.html" target="_blank">QUIENES SOMOS</a></li>
+        <li><a href="./html/galeria.html" target="_blank">GALERIA</a></li>
+        <li><a href="./html/contacto.html" target="_blank">CONTACTO</a></li>
+        <a class="icon">
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-facebook"></i>
+        </a>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <div id="showcase">
-        <div class="showcase-content">
-          <div class="showcase-content-box">
-            <h1>pasteleria artesanal</h1>
-            <p class="pt-3 pb-4 large">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quam expedita
-              </p>
-            <a href="#gallery" class="btn btn-light">hace tu pedido</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <h1>DULCE ABADESA</h1>
+  <h2>PASTELERIA ARTESANAL</h2>
+  <p>tradicion ,calidad , sabor , </p>
+  <p>el equilibrio perfecto</p>
+  <a href="">hace tu pedido</a>
+</section>
+<section class="productos">
+  <h3>recomendados</h3>
+  <div>
+    <div>
+      <img src="./img/modelo20.jpg" alt="">
+      <h4>tartas</h4>
+      <a href="">encargar</a>
+    </div>
+    <div>
+      <img src="./img/modelo19.jpg" alt="">
+      <h4>tortas</h4>
+      <a href="">encargar</a>
+    </div>
+    <div>
+      <img src="./img/modelo4.jpg" alt="">
+      <h4>masas</h4>
+      <a href="">encargar</a>
+    </div>
+    <div>
+      <img src="./img/modelo20.jpg" alt="">
+      <h4>tartas</h4>
+      <a href="">encargar</a>
+    </div>
+    <div>
+      <img src="./img/modelo19.jpg" alt="">
+      <h4>tortas</h4>
+      <a href="">encargar</a>
+    </div>
+    <div>
+      <img src="./img/modelo4.jpg" alt="">
+      <h4>masas</h4>
+      <a href="">encargar</a>
+    </div>
+  </div>
+</section>
     <section>
       <div id="destacados" class="pt-4 pb-4">
         <h4 class="text-uppercase font-weight-bold"><a href="index.html">RECOMENDADOS</a></h4>
