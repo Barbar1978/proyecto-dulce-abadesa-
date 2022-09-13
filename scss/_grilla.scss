@@ -1,3 +1,18 @@
+@mixin container-configuracion {
+    height: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin waves-config {
+    bottom: -135px;
+    height: 527px;
+    position: absolute;
+    overflow: hidden;
+}
 
 .container__ola {
     background: $color-principal;
@@ -7,10 +22,10 @@
 .content__ola {
     text-align: center;
     font-size: 2em;
-    color: rgba(255,255,255, .8);
+    color: rgba(255, 255, 255, .8);
 }
 
-.ola{
+.ola {
     padding-right: 0px;
     padding-left: 0px;
     z-index: 3;
@@ -27,7 +42,7 @@
     bottom: 0;
     width: 2402px;
     height: 427px;
-    background: url(../img/baner-2.jpg) center bottom no-repeat;
+    background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
     animation: 5s wave ease-in-out infinite alternate;
 }
 
@@ -47,83 +62,89 @@
 
 @keyframes wave {
     0% {
-        transform: translate(0 , 0);
+        transform: translate(0, 0);
     }
+
     50% {
         transform: translate(-80px, 30px);
     }
+
     100% {
         transform: translate(160px, -60px);
     }
 }
 
-.contacto{
-    position: relative;
-    z-index: 2; /*Para ordenar div - suerponer uno por otro */
-    background-color: white;
-}
-.titulo__contacto{
-    position: relative;
-    text-align: center;
-    
-}
-
-.column {
-    float: left;
-    width: 80%; 
-}
 //hero section
+@mixin hero-configuracion {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    /*Para ordenar div - suerponer uno por otro */
+}
 
-.hero{
+
+.hero {
     height: $hero-height-vh;
     background-image: url("../img/baner-2.jpg");
     @include hero-configuracion();
 }
 
-.hero__contenedor{
+.hero__contenedor {
     width: 400px;
     width: 600px;
     position: relative;
     left: 3rem;
 
 }
-.hero__titulo{   
+
+.hero__titulo {
     color: $color-hero-titulo;
-    font-size: 3.2rem;  
+    font-size: 3.2rem;
     margin-bottom: 3rem;
 }
 
-.btn__compra{
+.btn__compra {
     font-size: 1rem;
     font-size: 1.2rem;
     margin-top: 0.2rem;
 }
 
 /*Uso de extends*/
-.btn__mensaje{
+.btn__mensaje {
     @extend.btn__compra;
     color: green;
 }
-.btn__precios{
+
+.btn__precios {
     @extend.btn__compra;
     color: blue;
 }
-.hero{
+
+.hero {
     -webkit-animation: bg-pan-top 60s both;
-            animation: bg-pan-top 60s both;
+    animation: bg-pan-top 60s both;
 }
+
 @-webkit-keyframes bg-pan-top {
     0% {
         background-position: 50% 100%;
     }
+
     100% {
         background-position: 50% 0%;
     }
 }
+
 @keyframes bg-pan-top {
     0% {
         background-position: 50% 100%;
     }
+
     100% {
         background-position: 50% 0%;
     }
@@ -132,75 +153,79 @@
 /*Blog*/
 .blog__body {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
     background-color: $bg-color-blog;
 }
 
-.container__about{
+.container__about {
     position: relative;
     background-color: $bg-color-blog;
 }
 
-.texto__about{
+.texto__about {
     text-align: justify;
 }
 
 
-.album__productos{
+.album__productos {
     overflow: hidden;
 }
 
-.container__spotify{
+.container__spotify {
     overflow: hidden;
 }
 
-.album__instagram{
+.album__instagram {
     overflow: hidden;
 }
+
 //pasteleria
-.card{
-    &:hover{
-    border: $color-principal 0.2em solid;
-    transform: scale(1.03);
+.card {
+    &:hover {
+        border: $color-principal 0.2em solid;
+        transform: scale(1.03);
     }
 }
 
-.bg__card{
-    background: #eacda3;  
-    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  
-    background: linear-gradient(to right, #d6ae7b, #eacda3); 
+.bg__card {
+    background: #eacda3;
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+    background: linear-gradient(to right, #d6ae7b, #eacda3);
 }
 
-.bg__title{
+.bg__title {
     color: white;
 }
+
 /*Contacto*/
 
-.contacto{
+.contacto {
     position: relative;
-    z-index: 2; /*Para ordenar div - suerponer uno por otro */
+    z-index: 2;
+    /*Para ordenar div - suerponer uno por otro */
     background-color: white;
 }
-.titulo__contacto{
+
+.titulo__contacto {
     position: relative;
     text-align: center;
-    
+
 }
 
 .column {
     float: left;
-    width: 80%; 
+    width: 80%;
 }
+
 //galeria
 #elaboration {
     .elaboration-wrap {
-      display: flex;
-      justify-content: space-between;
-      &-box {
-        img {
-            width: 100%;
-           height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-box {
+            height: 300px;
         }
-      }
-    } 
-  } 
+    }
+}

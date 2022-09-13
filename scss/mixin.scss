@@ -6,17 +6,6 @@
 }
 
 
-@mixin btn ($backgrund-color, $color, $bold) {
-
-    background-color: $backgrund-color;
-    color: $color;
-    border-radius: 50px;
-    padding: 20px 3px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 @mixin flex($dir , $wrap , $just , $align ) {
     display: flex;
     flex-flow: $dir $wrap;
@@ -30,22 +19,3 @@
     }
 }
 
-@mixin waves-config {
-    bottom: -135px;
-    height: 527px;
-    position: absolute;
-    overflow: hidden;
-}
-
-/*Estilos - Hero Section*/
-/*Uso de mixin*/
-@mixin hero-configuracion {
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 2; /*Para ordenar div - suerponer uno por otro */
-}

@@ -126,6 +126,18 @@
     color: #fff;
 }
 
+@mixin btn ($backgrund-color, $color, $bold) {
+
+    background-color: $backgrund-color;
+    color: $color;
+    border-radius: 50px;
+    padding: 20px 3px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .card {
     &:hover {
         border: $color-principal 0.2em solid;
@@ -146,6 +158,5 @@
 .container-elaboration {
     margin: auto;
     max-width: 1300px;
-    overflow: auto;
     padding: 0 20px;
 }
