@@ -1,21 +1,25 @@
-
 @mixin tablet {
-    @media screen and (max-width: 768px) {
-      @content;
-    }
+  @media screen and (max-width: 768px) {
+    @content;
   }
-  
-  @mixin mobile {
-    @media screen and (max-width: 280px) {
-      @content;
-    }
-  }
+}
 
+@mixin mobile {
+  @media screen and (max-width: 280px) {
+    @content;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #elaboration {
     text-align: center;
 
     .elaboration-wrap {
-        flex-direction: column;
+      flex-direction: column;
 
-    } 
+    }
+  }
+  .hero__titulo {
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
